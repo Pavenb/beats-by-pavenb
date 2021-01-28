@@ -1,0 +1,195 @@
+.main {
+  background-color: var(--white);
+  /* background-image: url('images/background\ -\ stu\ ft\ toj\ dsep\ champloo.jpg'); */
+}
+
+.promo-banner {
+  background-color: var(--darkgray);
+  position: relative;
+  width: 100%;
+  height: 15vh;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  justify-self: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: var(--white);
+}
+
+
+ .main-content {
+   left: 0;
+   justify-self: start;
+   margin: 0;
+   color: var(--black);
+   width: 90%;
+ }
+
+ .main-content li {
+  width: 100%;
+ }
+
+ .main-content h1 {
+   font-size: 2rem;
+   text-align: center;
+ }
+
+ .main-content p {
+   font-size: 1.2rem;
+   text-align: center;
+ }
+
+ .featured-tracks-container {
+   display: grid;
+   list-style: none;
+  }
+  
+  .featured-tracks-container li{
+    margin-bottom: 20px;
+  }
+  .featured-track h1 {
+    font-family: 'Nunito';
+    text-align: center;
+    height: 44px;
+  }
+  
+  .featured-track p {
+    text-transform: lowercase;
+    font-family: 'Olde English';
+    text-align: center;
+    height: 22px;
+    margin: 5px;
+  }
+  
+  .featured-track {
+    color: var(--black);
+   text-decoration: none;
+ }
+ 
+ a.featured-track-art img {
+   width: 60%;
+
+ }
+
+ a.spotify-link img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 21px; 
+  height: 21px;
+
+}
+
+ /* listen to this track on spotify button */
+ 
+
+
+ .main-btn {
+   background-color: var(--darkgray);
+   color: var(--white);
+   border: none;
+   border-radius: 12px;
+   position: relative;
+   transition: all .35s;
+   outline: none;
+   text-align: center;
+ }
+
+ .main-btn a {
+   position: relative;
+   z-index: 2;
+   /* color: var(--white); */
+   text-decoration: none;
+ }
+
+ .main-btn:after {
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 21px;
+   transition: all .35s;
+   border-radius: 12px;
+   background: var(--spotifygreen);
+ }
+
+ .main-btn:hover {
+   color: var(--white);
+   
+ }
+
+ .main-btn:hover:after {
+   width: 100%;
+ }
+
+
+
+ #main-img-container {
+   text-align: center;
+ }
+
+ #main-img {
+   height: 80%;
+   width: 80%;
+ }
+
+ /* mobile responsive */
+ @media screen and (max-width: 768px) {
+   .main-container {
+     display: grid;
+     grid-template-columns: auto;
+     align-items: center;
+     justify-self: center;
+     width: 90%;
+     margin: 0 auto;
+     height: 90vh;
+     background-color: var(--darkgray);
+   }
+
+   .main-content {
+     justify-self: center;
+     color: var(--white);
+     width: 80%;
+     margin: 0;
+   }
+
+   .main-content h1 {
+     font-size: 2.5rem;
+   }
+
+   .main-content p {
+     margin-top: 1rem;
+     font-size: 1.5rem;
+   }
+
+   #main-img {
+     display: none;
+   }
+ }
+
+ @media screen and (max-width: 480px) {
+   .main-content {
+     text-align: center;
+   }
+
+   .main-content h1 {
+     font-size: 2.8rem;
+   }
+
+   .main-content p {
+     margin-top: 2rem;
+     font-size: 1.5rem;
+   }
+
+   .main-btn {
+     padding: 12px 36px;
+     margin-top: 2.5rem;
+   }
+ }
+
